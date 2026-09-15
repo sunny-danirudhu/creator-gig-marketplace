@@ -1,38 +1,672 @@
-﻿/* Custom Transitions and Polish */
+/* =========================================================
+   CREATORGIG — PREMIUM CREATOR MARKETPLACE UI
+   Frontend styling only
+   ========================================================= */
+
+:root {
+  --cg-purple: #7c3aed;
+  --cg-purple-dark: #5b21b6;
+  --cg-indigo: #4f46e5;
+  --cg-cyan: #06b6d4;
+  --cg-pink: #ec4899;
+  --cg-orange: #f97316;
+
+  --cg-bg: #f7f7fc;
+  --cg-card: #ffffff;
+  --cg-text: #17152b;
+  --cg-muted: #6b7280;
+  --cg-border: #e8e7f0;
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(124, 58, 237, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 95% 15%,
+      rgba(6, 182, 212, 0.07),
+      transparent 25%
+    ),
+    var(--cg-bg) !important;
+
+  color: var(--cg-text);
+}
+
+/* Selection */
+::selection {
+  background: rgba(124, 58, 237, 0.2);
+  color: #4c1d95;
+}
+
+/* =========================================================
+   TOP ANNOUNCEMENT BAR
+   ========================================================= */
+
+body > div:first-child {
+  background: linear-gradient(
+    90deg,
+    #4c1d95,
+    #6d28d9,
+    #4f46e5
+  ) !important;
+
+  letter-spacing: 0.01em;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+header {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.1) !important;
+  box-shadow:
+    0 4px 20px rgba(76, 29, 149, 0.05) !important;
+}
+
+/* Logo */
+header .w-10 {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #4f46e5,
+    #06b6d4
+  ) !important;
+
+  box-shadow:
+    0 8px 20px rgba(109, 40, 217, 0.25) !important;
+
+  transition: transform 0.2s ease;
+}
+
+header .w-10:hover {
+  transform: rotate(-4deg) scale(1.05);
+}
+
+/* CreatorGig text */
+header .text-indigo-600 {
+  color: #7c3aed !important;
+}
+
+/* Role switcher */
+header .bg-slate-100 {
+  background: #f3f1fa !important;
+  border-color: #e4dff2 !important;
+}
+
+/* Navigation buttons */
+header nav button {
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+header nav button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   MARKETPLACE HERO
+   ========================================================= */
+
+#viewMarketplace > div:first-child {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(6, 182, 212, 0.35),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 15% 90%,
+      rgba(236, 72, 153, 0.25),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #3b0764 0%,
+      #5b21b6 42%,
+      #4f46e5 72%,
+      #0891b2 100%
+    ) !important;
+
+  border-radius: 28px !important;
+
+  box-shadow:
+    0 25px 60px rgba(76, 29, 149, 0.2) !important;
+}
+
+/* Decorative glow */
+#viewMarketplace > div:first-child::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -70px;
+  bottom: -90px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  filter: blur(2px);
+}
+
+/* Hero heading */
+#viewMarketplace > div:first-child h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+/* Hero badge */
+#viewMarketplace > div:first-child span {
+  backdrop-filter: blur(8px);
+}
+
+/* Search box */
+#searchInput {
+  border: 2px solid transparent !important;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12) !important;
+
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: #a78bfa !important;
+
+  box-shadow:
+    0 0 0 4px rgba(167, 139, 250, 0.2),
+    0 12px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Search button */
+#viewMarketplace > div:first-child button {
+  background: #17152b !important;
+}
+
+#viewMarketplace > div:first-child button:hover {
+  background: #000000 !important;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   CATEGORY FILTERS
+   ========================================================= */
+
 .category-pill {
-  transition: all 0.15s ease-in-out;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease !important;
+}
+
+.category-pill:hover {
+  transform: translateY(-2px);
+  border-color: #a78bfa !important;
+
+  box-shadow:
+    0 6px 15px rgba(124, 58, 237, 0.12);
 }
 
 .category-pill.active {
-  background-color: #4f46e5 !important;
-  color: #ffffff !important;
-  border-color: #4f46e5 !important;
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #4f46e5
+    ) !important;
+
+  border-color: transparent !important;
+
+  box-shadow:
+    0 7px 18px rgba(109, 40, 217, 0.25) !important;
 }
 
+/* Ranking badge */
+#resultsCount + span + span {
+  color: #6d28d9 !important;
+  background: #f3e8ff !important;
+}
+
+/* =========================================================
+   GIG CARDS
+   ========================================================= */
+
 .gig-card {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 22px !important;
+  border: 1px solid rgba(124, 58, 237, 0.1) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fdfcff 100%
+    ) !important;
+
+  box-shadow:
+    0 5px 20px rgba(30, 20, 70, 0.06) !important;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease !important;
+}
+
+/* Colorful card top line */
+.gig-card::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #06b6d4,
+      #ec4899
+    );
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
 }
 
 .gig-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  transform: translateY(-7px) !important;
+
+  border-color:
+    rgba(124, 58, 237, 0.22) !important;
+
+  box-shadow:
+    0 22px 45px rgba(76, 29, 149, 0.13),
+    0 8px 18px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* Status Badges */
+.gig-card:hover::before {
+  opacity: 1;
+}
+
+/* Gig title */
+.gig-card h3 {
+  transition: color 0.2s ease;
+}
+
+.gig-card h3:hover {
+  color: #7c3aed !important;
+}
+
+/* Creator avatar */
+.gig-card .rounded-full {
+  background:
+    linear-gradient(
+      135deg,
+      #ede9fe,
+      #cffafe
+    ) !important;
+
+  color: #6d28d9 !important;
+}
+
+/* Price */
+.gig-card .text-lg {
+  background:
+    linear-gradient(
+      90deg,
+      #6d28d9,
+      #4f46e5
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Book button */
+.gig-card button {
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #4f46e5
+    ) !important;
+
+  box-shadow:
+    0 6px 15px rgba(79, 70, 229, 0.18);
+}
+
+.gig-card button:hover {
+  box-shadow:
+    0 10px 22px rgba(79, 70, 229, 0.3);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   GENERAL BUTTON POLISH
+   ========================================================= */
+
+button {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Main indigo buttons */
+.bg-indigo-600 {
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #4f46e5
+    ) !important;
+}
+
+.bg-indigo-600:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #6d28d9,
+      #4338ca
+    ) !important;
+
+  box-shadow:
+    0 9px 20px rgba(79, 70, 229, 0.25);
+}
+
+/* =========================================================
+   INPUTS / FORMS
+   ========================================================= */
+
+input,
+textarea,
+select {
+  border-color: #ddd9e9 !important;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #8b5cf6 !important;
+
+  box-shadow:
+    0 0 0 4px rgba(139, 92, 246, 0.1) !important;
+}
+
+/* =========================================================
+   POST GIG PAGE
+   ========================================================= */
+
+#viewPostGig > div {
+  border-radius: 24px !important;
+
+  border-color:
+    rgba(124, 58, 237, 0.1) !important;
+
+  box-shadow:
+    0 15px 45px rgba(76, 29, 149, 0.07) !important;
+}
+
+#viewPostGig h2 {
+  letter-spacing: -0.025em;
+}
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+#viewCreatorDashboard > div:first-child,
+#viewMyBookings > div:first-child {
+  border-radius: 24px !important;
+
+  border-color:
+    rgba(124, 58, 237, 0.1) !important;
+
+  box-shadow:
+    0 12px 35px rgba(76, 29, 149, 0.06) !important;
+}
+
+/* Dashboard stat cards */
+#viewCreatorDashboard .bg-amber-50,
+#viewCreatorDashboard .bg-emerald-50,
+#viewCreatorDashboard .bg-slate-100 {
+  border-radius: 16px !important;
+  min-width: 85px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#viewCreatorDashboard .bg-amber-50:hover,
+#viewCreatorDashboard .bg-emerald-50:hover,
+#viewCreatorDashboard .bg-slate-100:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   BOOKING CARDS
+   ========================================================= */
+
+#creatorBookingsList > div,
+#clientBookingsList > div {
+  border-radius: 22px !important;
+
+  border-color:
+    rgba(124, 58, 237, 0.09) !important;
+
+  box-shadow:
+    0 8px 25px rgba(30, 20, 70, 0.05) !important;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#creatorBookingsList > div:hover,
+#clientBookingsList > div:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 16px 35px rgba(76, 29, 149, 0.09) !important;
+}
+
+/* =========================================================
+   STATUS BADGES
+   ========================================================= */
+
 .status-badge-pending {
-  background-color: #fef3c7;
-  color: #92400e;
-  border: 1px solid #fde68a;
+  background: #fff7d6 !important;
+  color: #92400e !important;
+  border: 1px solid #fde68a !important;
+  border-radius: 999px !important;
 }
 
 .status-badge-accepted {
-  background-color: #d1fae5;
-  color: #065f46;
-  border: 1px solid #a7f3d0;
+  background: #dcfce7 !important;
+  color: #166534 !important;
+  border: 1px solid #86efac !important;
+  border-radius: 999px !important;
 }
 
 .status-badge-declined {
-  background-color: #fee2e2;
-  color: #991b1b;
-  border: 1px solid #fecaca;
+  background: #fee2e2 !important;
+  color: #991b1b !important;
+  border: 1px solid #fecaca !important;
+  border-radius: 999px !important;
+}
+
+/* =========================================================
+   BOOKING MODAL
+   ========================================================= */
+
+#bookingModal {
+  background: rgba(15, 10, 30, 0.68) !important;
+  backdrop-filter: blur(10px);
+}
+
+#bookingModal > div {
+  border-radius: 26px !important;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.28) !important;
+
+  animation: modalEnter 0.22s ease-out;
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal category */
+#modalGigCategory {
+  background: #f3e8ff !important;
+  color: #6d28d9 !important;
+}
+
+/* =========================================================
+   NOTIFICATIONS
+   ========================================================= */
+
+#notificationContent {
+  border-radius: 16px !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08) !important;
+
+  animation: notificationEnter 0.25s ease-out;
+}
+
+@keyframes notificationEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   EMPTY STATES
+   ========================================================= */
+
+#noGigsState,
+#noCreatorBookingsState,
+#noClientBookingsState {
+  border-radius: 24px !important;
+
+  border-color:
+    rgba(124, 58, 237, 0.1) !important;
+
+  box-shadow:
+    0 10px 30px rgba(76, 29, 149, 0.04) !important;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #faf9ff
+    ) !important;
+
+  border-color:
+    rgba(124, 58, 237, 0.1) !important;
+}
+
+footer .text-slate-700 {
+  color: #4c1d95 !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  #viewMarketplace > div:first-child {
+    border-radius: 22px !important;
+  }
+
+  #viewMarketplace > div:first-child h1 {
+    font-size: 2rem;
+  }
+
+  .gig-card {
+    border-radius: 18px !important;
+  }
+
+  header nav {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  header .flex.items-center.space-x-2 {
+    gap: 4px;
+  }
+
+  .gig-card {
+    padding: 1.1rem !important;
+  }
+
+  #bookingModal > div {
+    border-radius: 20px !important;
+  }
 }
