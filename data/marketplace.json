@@ -1,0 +1,213 @@
+{
+  "gigs": [
+    {
+      "id": "gig-1789463789478",
+      "title": "Shorts & Reels AI Repurposing",
+      "category": "AI & Automation",
+      "rate": 90,
+      "description": "Transform long podcasts into 10 viral vertical clips with animated captions and sound effects.",
+      "creatorName": "Test Creator Sam",
+      "createdAt": "2026-09-15T09:16:29.478Z"
+    },
+    {
+      "id": "gig-1789462097363",
+      "title": "Shorts & Reels AI Repurposing",
+      "category": "AI & Automation",
+      "rate": 90,
+      "description": "Transform long podcasts into 10 viral vertical clips with animated captions and sound effects.",
+      "creatorName": "Test Creator Sam",
+      "createdAt": "2026-09-15T08:48:17.363Z"
+    },
+    {
+      "id": "gig-1789460805629",
+      "title": "long form editing",
+      "category": "Video Editing",
+      "rate": 200000000000,
+      "description": "i can edit long form vids",
+      "creatorName": "Sunny",
+      "createdAt": "2026-09-15T08:26:45.629Z"
+    },
+    {
+      "id": "gig-1789458197376",
+      "title": "Shorts & Reels AI Repurposing",
+      "category": "AI & Automation",
+      "rate": 90,
+      "description": "Transform long podcasts into 10 viral vertical clips with animated captions and sound effects.",
+      "creatorName": "Test Creator Sam",
+      "createdAt": "2026-09-15T07:43:17.376Z"
+    },
+    {
+      "id": "gig-1",
+      "title": "Viral YouTube Shorts & TikTok Editing",
+      "category": "Video Editing",
+      "rate": 65,
+      "description": "High-retention video editing with dynamic captions, sound effects, B-roll overlays, and pacing optimized for YouTube Shorts, Reels, and TikTok.",
+      "creatorName": "Marcus Vance",
+      "createdAt": "2026-09-14T10:00:00.000Z"
+    },
+    {
+      "id": "gig-2",
+      "title": "Custom YouTube Thumbnails & Channel Branding",
+      "category": "Graphic Design",
+      "rate": 45,
+      "description": "Click-worthy YouTube thumbnails engineered for high CTR. Includes 3 concepts, source files, and 2 rounds of revisions.",
+      "creatorName": "Elena Rostova",
+      "createdAt": "2026-09-14T12:30:00.000Z"
+    },
+    {
+      "id": "gig-3",
+      "title": "Studio-Quality Voiceover for Explainer Videos",
+      "category": "Voiceover & Audio",
+      "rate": 80,
+      "description": "Warm, engaging, native English voiceovers recorded in a broadcast-treated acoustic booth with fast 24-hour turnaround.",
+      "creatorName": "Devon Park",
+      "createdAt": "2026-09-15T08:15:00.000Z"
+    },
+    {
+      "id": "gig-4",
+      "title": "SEO Blog Posts & Creator Newsletter Writing",
+      "category": "Writing & Copy",
+      "rate": 55,
+      "description": "Engaging long-form blog articles and creator newsletters tailored to your niche. Researched, SEO-optimized, and written in your voice.",
+      "creatorName": "Aisha Khan",
+      "createdAt": "2026-09-15T09:45:00.000Z"
+    },
+    {
+      "id": "gig-5",
+      "title": "Custom AI Workflow & Content Repurposing Bot",
+      "category": "AI & Automation",
+      "rate": 120,
+      "description": "Automate your creator workflow using AI. Transcribe podcasts, generate viral tweet threads, and slice long videos into clips automatically.",
+      "creatorName": "Kai Takahashi",
+      "createdAt": "2026-09-15T11:00:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "book-1789463789481",
+      "gigId": "gig-2",
+      "gigTitle": "Custom YouTube Thumbnails & Channel Branding",
+      "creatorName": "Elena Rostova",
+      "clientName": "Alice Miller",
+      "clientContact": "alice@example.com",
+      "projectDetails": "Need 3 YouTube thumbnails for our launch week.",
+      "deliveryDate": "2026-09-22",
+      "rate": 45,
+      "status": "Accepted",
+      "createdAt": "2026-09-15T09:16:29.481Z",
+      "updatedAt": "2026-09-15T09:16:29.485Z"
+    },
+    {
+      "id": "book-1789463789480",
+      "gigId": "gig-1789463789478",
+      "gigTitle": "Shorts & Reels AI Repurposing",
+      "creatorName": "Test Creator Sam",
+      "clientName": "Alice Miller",
+      "clientContact": "alice@example.com",
+      "projectDetails": "Need 5 video clips from episode 12 of my show.",
+      "deliveryDate": "2026-09-25",
+      "rate": 90,
+      "status": "Declined",
+      "createdAt": "2026-09-15T09:16:29.480Z",
+      "updatedAt": "2026-09-15T09:16:29.483Z"
+    },
+    {
+      "id": "book-1789462097367",
+      "gigId": "gig-2",
+      "gigTitle": "Custom YouTube Thumbnails & Channel Branding",
+      "creatorName": "Elena Rostova",
+      "clientName": "Alice Miller",
+      "clientContact": "alice@example.com",
+      "projectDetails": "Need 3 YouTube thumbnails for our launch week.",
+      "deliveryDate": "2026-09-22",
+      "rate": 45,
+      "status": "Accepted",
+      "createdAt": "2026-09-15T08:48:17.367Z",
+      "updatedAt": "2026-09-15T08:48:17.369Z"
+    },
+    {
+      "id": "book-1789462097365",
+      "gigId": "gig-1789462097363",
+      "gigTitle": "Shorts & Reels AI Repurposing",
+      "creatorName": "Test Creator Sam",
+      "clientName": "Alice Miller",
+      "clientContact": "alice@example.com",
+      "projectDetails": "Need 5 video clips from episode 12 of my show.",
+      "deliveryDate": "2026-09-25",
+      "rate": 90,
+      "status": "Declined",
+      "createdAt": "2026-09-15T08:48:17.365Z",
+      "updatedAt": "2026-09-15T08:48:17.368Z"
+    },
+    {
+      "id": "book-1789460495990",
+      "gigId": "gig-1",
+      "gigTitle": "Viral YouTube Shorts & TikTok Editing",
+      "creatorName": "Marcus Vance",
+      "clientName": "SUNNY ANIRUDHU",
+      "clientContact": "AMARADU@GMAIL.COM",
+      "projectDetails": "I NEED AN 3 MIN edit",
+      "deliveryDate": "2026-09-18",
+      "rate": 65,
+      "status": "Declined",
+      "createdAt": "2026-09-15T08:21:35.990Z",
+      "updatedAt": "2026-09-15T08:24:03.026Z"
+    },
+    {
+      "id": "book-1789458340418",
+      "gigId": "gig-1",
+      "gigTitle": "Viral YouTube Shorts & TikTok Editing",
+      "creatorName": "Marcus Vance",
+      "clientName": "Jordan Reed",
+      "clientContact": "afdbdfdkbdb@jbcbcsshbhb",
+      "projectDetails": "dwbchdwhcbwhcbdhcbdhcbhcehbehhvbehb",
+      "deliveryDate": "2026-09-17",
+      "rate": 65,
+      "status": "Accepted",
+      "createdAt": "2026-09-15T07:45:40.418Z",
+      "updatedAt": "2026-09-15T08:24:06.889Z"
+    },
+    {
+      "id": "book-1789458197380",
+      "gigId": "gig-2",
+      "gigTitle": "Custom YouTube Thumbnails & Channel Branding",
+      "creatorName": "Elena Rostova",
+      "clientName": "Alice Miller",
+      "clientContact": "alice@example.com",
+      "projectDetails": "Need 3 YouTube thumbnails for our launch week.",
+      "deliveryDate": "2026-09-22",
+      "rate": 45,
+      "status": "Accepted",
+      "createdAt": "2026-09-15T07:43:17.380Z",
+      "updatedAt": "2026-09-15T07:43:17.385Z"
+    },
+    {
+      "id": "book-1789458197378",
+      "gigId": "gig-1789458197376",
+      "gigTitle": "Shorts & Reels AI Repurposing",
+      "creatorName": "Test Creator Sam",
+      "clientName": "Alice Miller",
+      "clientContact": "alice@example.com",
+      "projectDetails": "Need 5 video clips from episode 12 of my show.",
+      "deliveryDate": "2026-09-25",
+      "rate": 90,
+      "status": "Declined",
+      "createdAt": "2026-09-15T07:43:17.378Z",
+      "updatedAt": "2026-09-15T07:43:17.383Z"
+    },
+    {
+      "id": "book-1",
+      "gigId": "gig-1",
+      "gigTitle": "Viral YouTube Shorts & TikTok Editing",
+      "creatorName": "Marcus Vance",
+      "clientName": "Jordan Reed",
+      "clientContact": "jordan@example.com",
+      "projectDetails": "Need 3 TikTok clips edited from a 15-minute podcast interview.",
+      "deliveryDate": "2026-09-20",
+      "rate": 65,
+      "status": "Declined",
+      "createdAt": "2026-09-15T11:30:00.000Z",
+      "updatedAt": "2026-09-15T08:24:04.483Z"
+    }
+  ]
+}
